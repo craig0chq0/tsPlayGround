@@ -65,6 +65,7 @@ class hunman implements people {
 interface chinese extends people{
     homecity:string;
 }
+//接口Chinese中的属性
 // chinese.name
 // chinese.age
 // chinese.father
