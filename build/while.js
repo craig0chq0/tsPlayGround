@@ -45,3 +45,10 @@ function getsum3(arr) {
 }
 console.log("answer3 is " + getsum3(arr0));
 // 构造一个数组，并作为参数传入上面函数，打印返回值
+var arr3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+function getarr(arr) {
+    for (var i_5 = 0; i_5 < arr.length; ++i_5) {
+        return arr[i_5];
+    }
+    console.log("arr is " + arr3[0]);
+}

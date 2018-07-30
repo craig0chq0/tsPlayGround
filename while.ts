@@ -46,3 +46,4 @@ function getsum3(arr: number[]) {
 }
 console.log("answer3 is " + getsum3(arr0));
 // 构造一个数组，并作为参数传入上面函数，打印返回值
+
