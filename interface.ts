@@ -13,7 +13,7 @@ interface people {
     job?: string;
     readonly father: string;
 }
-// 实现一个满足此接口的变量
+// 实现一个满足此接口的变量,即属性为此接口，即内容与接口形式一致
 let LJJ: people = {
     name: "ljj",
     age: 3,
@@ -24,25 +24,27 @@ interface functionpeople {
     (age: people): number
 }
 // 实现一个满足此接口的函数变量 返回值为age的值
+//变量类型为接口类型
 let ageNumb: functionpeople;
 ageNumb = function (ljj: people) {
     return ljj.age
 }
 // 声明一个可索引接口 namebook 此接口的所有属性都满足 people 接口，且属性名都为字符串
 interface namebook {
-    [MMM: number]: people
+    [MMM: string]: people
 }
 
 // 实现一个变量满足上一条的接口
+//相当于多个people接口形式的内容
 let someone: namebook;
 someone = {
-    121: {
+    aaa: {
         name: "ljj",
         age: 3,
         father: "ooo",
         job: "worker"
     },
-    212: {
+    bbb: {
         name: "ljj222",
         age: 5,
         father: "47487"
@@ -50,6 +52,9 @@ someone = {
 };
 // 实现一个类 满足 people 接口， 并且添加一个对象方法 getAge 返回的是 age 的值
 // 上类中添加一个静态属性 home 类型为字符串
+//implements--即为类添加接口
+//ststic即添加静态属性
+//添加返回值时注意返回值属于哪个类
 class hunman implements people {
     static home: string
     static getHome() {
