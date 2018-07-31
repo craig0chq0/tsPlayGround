@@ -144,12 +144,12 @@ console.log("new: " + change("a", arr2));
 
 // 在数组 arr 末尾添加元素 item，不要直接修改数组 arr 结果返回新的数组
 let arr3: string[] = ["one", "two", "three", "four"]
-function add1(arr: string[]) {
-    let item: string[] = ["x"];
-    let returner2 = arr.concat(item)
+function add1(arr: string[], item: string) {
+    let itemm: string[] = [item];
+    let returner2 = arr.concat(itemm)
     return returner2;
 }
-console.log("new3: " + add1(arr3));
+console.log("new3: " + add1(arr3, "x"));
 console.log("old3: " + arr3);
 
 
