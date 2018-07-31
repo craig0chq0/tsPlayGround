@@ -117,7 +117,6 @@ function find(x: number, arr: number[]) {
 console.log(find(2, arr1));
 
 // 移除数组 arr 中所有值与 item 相等的元素。不要直接修改数组 arr, 结果返回新的数组
-//returner.push(arr[i])  将arr[]数组中i位置的元素复制进入returner数组之中
 let arr2: string[] = ["a", "b", "c", "d", "e"]
 function del(x: string, arr: string[]) {
     let returner: string[] = [];
@@ -133,7 +132,6 @@ console.log("old: " + arr2);
 
 
 // 移除数组 arr 中所有值与 item 相等的元素。直接修改数组 arr, 并返回结果
-    //splice 移除或添加元素进入原数组，改变原数组内容
 function change(x: string, arr: string[]) {
     for (let i = 0; i < arr.length; ++i) {
         if (x === arr[i]) {
@@ -145,7 +143,6 @@ function change(x: string, arr: string[]) {
 console.log("new: " + change("a", arr2));
 
 // 在数组 arr 末尾添加元素 item，不要直接修改数组 arr 结果返回新的数组
-//连接两个数组顺看排列顺序
 let arr3: string[] = ["one", "two", "three", "four"]
 function add1(arr: string[], item: string) {
     let itemm: string[] = [item];
@@ -155,9 +152,7 @@ function add1(arr: string[], item: string) {
 console.log("new3: " + add1(arr3, "x"));
 console.log("old3: " + arr3);
 
-
 // 删除数组 arr 末尾最后一个元素，不要直接修改数组 arr 结果返回新的数组
-//slice指从原数组中截取一段数据，不改变原数组内容
 function del1(arr: string[]) {
     let i = arr.length - 1;
     let cut = arr.slice(0, i);
@@ -167,7 +162,6 @@ console.log("new4: " + del1(arr3));
 console.log("old4: " + arr3);
 
 // 在数组 arr 开头添加元素 item。不要直接修改数组 arr，结果返回新的数组
-//let arr1 = [item] 使数组中元素内容为item
 
 function add2(arr: string[], item: string) {
     let arr1 = [item];
@@ -201,7 +195,6 @@ function time(item: number, arr: number[]) {
 console.log("length " + time(2, arr1));
 
 // 找出数组 arr 中重复出现过的元素
-//sort()是使数组重新按顺序排列，indexof（）是查询元素在数组中的位置，如果indexof（）===-1则说明查无此元素
 function check(arr: number[]) {
     let returner: number[] = [];
     arr.sort();
@@ -216,7 +209,6 @@ console.log(arr1);
 console.log(check(arr1));
 
 // 为数组 arr 中的每个元素求二次方。不要直接修改数组 arr，结果返回新的数组
-//说明一个元素后，后面的内容并不会更改此元素的值，因此如果要保证返回的是需要的值可以在运行完后声明
 function sd(arr: number[]) {
     let ret2: number[] = [];
     let x: number = 0;
