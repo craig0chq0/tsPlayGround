@@ -24,7 +24,7 @@ interface functionpeople {
     (age: people): number
 }
 // 实现一个满足此接口的函数变量 返回值为age的值
-//变量类型为接口类型
+//变量类型为接口
 let ageNumb: functionpeople;
 ageNumb = function (ljj: people) {
     return ljj.age
@@ -76,3 +76,17 @@ interface chinese extends people{
 // chinese.father
 // chinese.job?
 // chinese.homecity
+let numbers:number[]=[1,2,3,4,5,6,7]
+numbers.forEach(myFunction)
+function myFunction(item:number, index:number) {
+    
+    console.log("index["+index+"]"+item);
+}
+let myname:string;
+let myage:number;
+function ljj(name:string,age:number){
+    myname=name;
+    myage=age;
+    return `myname is ${myname},and I am ${myage} years old`;
+}
+console.log(ljj("Li",3));
