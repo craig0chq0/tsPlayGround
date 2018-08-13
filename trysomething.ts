@@ -21,7 +21,7 @@ function start() {
     ti = setInterval(timing(sec1, sec01, sec001), 10);
 }
 //暂停计时
-function stop() {
+function stopTime() {
     if (ti == null) return;
     clearInterval(ti);
 }

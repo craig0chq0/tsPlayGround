@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "strictNullChecks":false,
     "inlineSourceMap": true,
     "outDir": "./build",
     /* Basic Options */
